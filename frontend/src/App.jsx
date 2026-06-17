@@ -5,7 +5,7 @@ import Simulator from './components/Simulator';
 import Variables from './components/Variables';
 import './styles/theme.css';
 
-const SERVER_URL = 'http://localhost:5000';
+const SERVER_URL = 'https://bigdataairstatus.onrender.com';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('variables');
