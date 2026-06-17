@@ -4,3 +4,4 @@ pyspark==4.0.2
 plotly==5.22.0
 pandas==2.2.2
 psutil==5.9.8
+gunicorn==22.0.0
