@@ -748,7 +748,9 @@ def simulate():
     except Exception as e:
         return jsonify({"erro": str(e)}), 500
 
+# Inicializa a session (ou entra em Fallback) e gera os gráficos no cache ao carregar o módulo (necessário para Gunicorn/Render)
+init_spark()
+gerar_graficos_dashboard()
+
 if __name__ == '__main__':
-    init_spark()
-    gerar_graficos_dashboard()
     app.run(host='0.0.0.0', port=5000, debug=False)
